@@ -25,5 +25,5 @@ In the future i'll maybe take a try to make it better and with more posibilities
    - killing friendly monsters [excluding food sources like cow or sheep]
    - killing people which ranks are positive or neutral
 
- * if you're playing with keepInventory set to true people which have negative ranks have chance to loose some of their items. Cruel can loose up to 4 items with 40% chance each.
+ * if you're playing with keepInventory set to true people which have negative ranks have chance to drop some of their items. Cruel can drop up to 10 items with 20% chance each.
   
