@@ -1,0 +1,5 @@
+name: Metin2Ranks
+version: ${project.version}
+main: me.metin2ranks.metin2ranks.Metin2Ranks
+api-version: 1.13
+description: Adds ranking from metin2
