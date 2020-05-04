@@ -8,6 +8,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class Metin2Ranks extends JavaPlugin {
 
     public static Metin2Ranks instance;
+    public static boolean armorStand = true;
+    public static boolean chatPrefix = true;
 
     @Override
     public void onEnable() {

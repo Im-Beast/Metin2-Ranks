@@ -11,6 +11,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
@@ -40,7 +41,15 @@ public class BukkitListener implements Listener {
     }
 
     @EventHandler
+    public void onChat(AsyncPlayerChatEvent event) {
+        if (!Metin2Ranks.chatPrefix) return;
+        Profile prof = Profile.getProfile(event.getPlayer().getUniqueId());
+        event.setFormat(ChatColor.GRAY + "[" + ClassifyRank.formatRank(ClassifyRank.classify(event.getPlayer())) + ChatColor.GRAY + "] " + event.getFormat());
+    }
+
+    @EventHandler
     public void onMove(PlayerMoveEvent event) {
+        if (!Metin2Ranks.armorStand) return;
         Profile prof = Profile.getProfile(event.getPlayer().getUniqueId());
         if (prof.armorStand == null) {
             Location ploc = event.getTo().clone().add(0, 1.625, 0);
