@@ -1,8 +1,6 @@
 # Metin2-Ranks
 
-Spigot plugin which adds Metin2 Rank system to the game. It is very simple plugin made because of one request. It doesn't include any configs or supporting any apis.
-In the future i'll maybe take a try to make it better and with more posibilities to change.
-
+Spigot plugin which adds Metin2 Rank system to the game. It is very simple and lightweight plugin made because of one request.It doesn't support any sort of API-system or configs.
 * adds:
  - nametag above your head which shows ur current rank
  - all metin2 ranks:
