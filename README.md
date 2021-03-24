@@ -19,7 +19,7 @@ Spigot plugin which adds Metin2 Rank system to the game. It is very simple and l
    - killing people with negative ranks whilist having positive or neutral rank
    - eating gapple/enchanted gapple (work as zen bean from metin, works only if you have minus points)
    - beating ender dragon and wither
-  * loose points by:
+ * loose points by:
    - killing friendly monsters [excluding food sources like cow or sheep]
    - killing people which ranks are positive or neutral
 
